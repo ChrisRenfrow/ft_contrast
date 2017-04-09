@@ -17,15 +17,17 @@ In order to develop an algorithm that takes advantage of the resources available
 to it, we need to keep spinning up new threads and assigning a task to that thread.
 However, spinning up threads and then letting them die is not efficient as it
 takes time to initialize new threads. The solution? Keep the threads alive while
-they wait for new jobs. This can be done a couple ways. Method one, preemptively
-start several threads and wait for jobs to assign to each, and method two, spin
-up new threads as the job requires and keep them running.
+they wait for new jobs.
+
+Creating a 'pool' of threads to accept new jobs is likely the best way to handle
+this problem. After we create our pool we then can begin accepting a queue of new
+jobs to assign to each thread as they become available.
 
 #### Mandatory
 
 Create the functions listed below
 
-- `ft_contrast_th` - execute parallel threads to calculate the contrast
+- `ft_contrast_th` - execute to calculate the contrast
 - `ft_contrast_tp` - same as the above but with our own thread library(?)
 
 Other requirements
@@ -47,7 +49,7 @@ Other requirements
 - `malloc`
 - `free`
 
-**fctl.h**
+**fcntl.h**
 
 - `open`
 - `close`
