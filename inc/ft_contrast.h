@@ -1,4 +1,3 @@
-/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_contrast.h                                      :+:      :+:    :+:   */
@@ -39,5 +38,11 @@ typedef struct	s_contr_data
 				int 	contrast;
 				t_image *image;
 }				t_contr_data;
+
+#endif
+#ifndef FT_CONTRAST_H
+# define FT_CONTRAST_H
+
+
 
 #endif
