@@ -40,9 +40,3 @@ typedef struct	s_contr_data
 }				t_contr_data;
 
 #endif
-#ifndef FT_CONTRAST_H
-# define FT_CONTRAST_H
-
-
-
-#endif
